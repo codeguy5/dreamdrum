@@ -2,60 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JS Drum Kit</title>
+  <title>BAT drums</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body class="batman">
+<a href="index.html" class="myButton">dream drum</a>
 
   <div class="keys">
-    <div data-key="65" class="key">
-      <kbd>A</kbd>
-      <span class="sound">clap</span>
+    <div data-key="49" class="key">
+      <kbd>1</kbd>
+      <span class="sound">nananana BATMAN</span>
     </div>
-    <div data-key="83" class="key">
-      <kbd>S</kbd>
-      <span class="sound">hihat</span>
+    <div data-key="50" class="key">
+      <kbd>2</kbd>
+      <span class="sound">batime</span>
     </div>
-    <div data-key="68" class="key">
-      <kbd>D</kbd>
-      <span class="sound">kick</span>
+    <div data-key="51" class="key">
+      <kbd>3</kbd>
+      <span class="sound">cant wait</span>
     </div>
-    <div data-key="70" class="key">
-      <kbd>F</kbd>
-      <span class="sound">openhat</span>
+    <div data-key="52" class="key">
+      <kbd>4</kbd>
+      <span class="sound">im batman</span>
     </div>
-    <div data-key="71" class="key">
-      <kbd>G</kbd>
-      <span class="sound">boom</span>
+    <div data-key="53" class="key">
+      <kbd>5</kbd>
+      <span class="sound">holy mashed potatoes</span>
     </div>
-    <div data-key="72" class="key">
-      <kbd>H</kbd>
-      <span class="sound">ride</span>
+    <div data-key="54" class="key">
+      <kbd>6</kbd>
+      <span class="sound">beautiful</span>
     </div>
-    <div data-key="74" class="key">
-      <kbd>J</kbd>
-      <span class="sound">snare</span>
+    <div data-key="55" class="key">
+      <kbd>7</kbd>
+      <span class="sound">crimanel</span>
     </div>
-    <div data-key="75" class="key">
-      <kbd>K</kbd>
-      <span class="sound">tom</span>
-    </div>
-    <div data-key="76" class="key">
-      <kbd>L</kbd>
-      <span class="sound">tink</span>
+
     </div>
   </div>
 
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/hihat.wav"></audio>
-  <audio data-key="68" src="sounds/kick.wav"></audio>
-  <audio data-key="70" src="sounds/openhat.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key="49" src="sounds/bat theme.wav"></audio>
+  <audio data-key="50" src="sounds/bat-time_x.wav"></audio>
+  <audio data-key="51" src="sounds/joker.m4a"></audio>
+  <audio data-key="52" src="sounds/im-batman.mp3"></audio>
+  <audio data-key="53" src="sounds/holy_mashed_potatoes.wav"></audio>
+  <audio data-key="54" src="sounds/beautiful.wav"></audio>
+  <audio data-key="55" src="sounds/criminal.wav"></audio>
+ 
 
 <script>
   window.addEventListener("keydown",function (e) {
@@ -79,8 +72,21 @@ e.target.classList.remove('playing')
 const keys = document.querySelectorAll('.key');//removes anything that is not a transform
 
 keys.forEach(key => key.addEventListener('transitionend',removeTransition));
-</script>
 
+
+
+
+
+</script>
+<script >//analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88809376-1', 'auto');
+  ga('send', 'pageview');
+s</script>
 
 </body>
 </html>
